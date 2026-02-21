@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="group_sale_cost_validator" model="res.groups">
+            <field name="name">Sale Cost Validator</field>
+            <field name="comment">The user will have access to validate the total price sale order before confirming it.</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+    </data>
+</odoo>
