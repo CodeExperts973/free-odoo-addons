@@ -1,0 +1,28 @@
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.form.view.inherit.invoice.approvals</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form//setting[@id='total_amount_words']" position="before">
+                <div class="col-12 col-lg-6 o_setting_box" id="invoice_approval_setting_container">
+                    <div class="o_setting_left_pane">
+                        <field name="invoice_approval"/>
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label for="invoice_approval" string="Invoice/Refund Approval"/>
+                        <div class="text-muted">
+                            Require approvals for invoices and refunds before posting.
+                        </div>
+                        <div class="content-group" invisible="not invoice_approval">
+                            <div class="row mt16">
+                                <label for="invoice_threshold_amount" class="col-lg-3 o_light_label" string="Threshold Amount"/>
+                                <field name="invoice_threshold_amount"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

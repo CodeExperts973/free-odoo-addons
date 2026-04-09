@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="group_invoice_support_approver" model="res.groups">
+            <field name="name">Invoice Support Approver</field>
+            <field name="comment">The user can approve invoices below the threshold.</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+        <record id="group_invoice_accounting_approver" model="res.groups">
+            <field name="name">Invoice Accounting Approver</field>
+            <field name="comment">The user can approve refunds below the threshold.</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+        <record id="group_invoice_general_approver" model="res.groups">
+            <field name="name">Invoice General Approver</field>
+            <field name="comment">The user can approve invoices/refunds above or equal to the threshold.</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+        <record id="group_invoice_payment_validator_1" model="res.groups">
+            <field name="name">Bill Payment Validator 1</field>
+            <field name="comment">The user can validate bill and sent to validator 2.</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+        <record id="group_invoice_payment_validator_2" model="res.groups">
+            <field name="name">Bill Payment Validator 2</field>
+            <field name="comment">The user can validate bill and approve.</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+    </data>
+</odoo>

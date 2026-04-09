@@ -1,0 +1,405 @@
+<!-- Project Off-Track Popup Documentation for Odoo 17 -->
+
+<section class="oe_container" style="margin-top: 0 !important;">
+    <div class="row" style="max-width: 100%; margin: 0 auto; background: black; padding: 2rem 1rem; border-radius: 20px;">
+        <div class="col-12 d-flex justify-content-center align-items-center gap-3 flex-wrap">
+            <span class="badge" style="background-color: #77b903; color: white; padding: 0.5rem 1.25rem; font-size: 0.95rem; border-radius: 50px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <i class="fa fa-check-circle" style="margin-right: 0.5rem;"></i>Enterprise
+                </span>
+            <span class="badge" style="background-color: #77b903; color: white; padding: 0.5rem 1.25rem; font-size: 0.95rem; border-radius: 50px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <i class="fa fa-check-circle" style="margin-right: 0.5rem;"></i>Odoo.sh
+                </span>
+            <span class="badge" style="background-color: #77b903; color: white; padding: 0.5rem 1.25rem; font-size: 0.95rem; border-radius: 50px; font-weight: 600; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <i class="fa fa-check-circle" style="margin-right: 0.5rem;"></i>community
+                </span>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container bg-transparent" style="margin: 1rem 0; padding: 1rem 0; height: auto; position: relative;">
+    <div style="margin: 0 auto; max-width: 100%;">
+        <div class="shadow bg-white px-5 pb24 pt24 mx-auto" style="border-radius: 15px; padding-left: 5%; max-width: 90%; text-align: center;">
+            <div class="custom_gst_text">
+                <h2 class="oe_slogan custom_gst_design" style="font-size: 30px; color: black; font-family: arial; font-weight: bold; text-align: center; margin: 0.5rem 0;">
+                    Invoice Approvals Management
+                </h2>
+                <!-- Logo: Responsive, centered (console-like: no fixed left, uses mx-auto) -->
+                <img class="img img-responsive mt16 mx-auto d-block" src="ce2.png" alt="CODEXperts Logo"
+                     style="height: 250px; width: 280px; position: static; top: auto; left: auto; z-index: auto; margin-top: 1rem;" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container" style="margin: 4rem 0;">
+    <div class="oe_row oe_spaced">
+        <h2 class="text-center" style="color:#111827; font-weight:700; font-size:2.4rem; margin-bottom:2.5rem;">
+            Key Features
+        </h2>
+
+        <div class="container">
+            <div class="row" style="margin:0 auto; max-width:1200px;">
+
+                <!-- Multi-Level Approval Workflow -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="shadow-sm"
+                         style="background:#fff; border-radius:15px; padding:2rem; height:100%; border-left:4px solid #6366f1;">
+                        <div style="display:flex; align-items:center; margin-bottom:1rem;">
+                            <div style="background:linear-gradient(135deg,#6366f1 0%,#8b5cf6 100%);
+                          border-radius:12px; width:50px; height:50px; display:flex;
+                          align-items:center; justify-content:center; margin-right:1rem;">
+                                <!-- Layers/Workflow SVG -->
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 style="color:#111827; font-weight:700; margin:0; font-size:1.1rem;">
+                                Multi-Level Approval Workflow
+                            </h4>
+                        </div>
+                        <p style="color:#4b5563; margin:0; line-height:1.6; font-size:0.95rem;">
+                            Five distinct approval states: <strong>Waiting Support Approval</strong>, <strong>Waiting Accounting Approval</strong>, <strong>Waiting General Approval</strong>, and two-step validation for <strong>Payment Validator 1 & 2</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Amount-Based Routing -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="shadow-sm"
+                         style="background:#fff; border-radius:15px; padding:2rem; height:100%; border-left:4px solid #10b981;">
+                        <div style="display:flex; align-items:center; margin-bottom:1rem;">
+                            <div style="background:linear-gradient(135deg,#10b981 0%,#059669 100%);
+                          border-radius:12px; width:50px; height:50px; display:flex;
+                          align-items:center; justify-content:center; margin-right:1rem;">
+                                <!-- Chart/Scale SVG -->
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 style="color:#111827; font-weight:700; margin:0; font-size:1.1rem;">
+                                Amount-Based Routing
+                            </h4>
+                        </div>
+                        <p style="color:#4b5563; margin:0; line-height:1.6; font-size:0.95rem;">
+                            Configurable <strong>threshold amount</strong> automatically routes invoices. Below threshold goes to Support/Accounting approvers; above requires <strong>General Manager</strong> authorization.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vendor Bill Two-Step Validation -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="shadow-sm"
+                         style="background:#fff; border-radius:15px; padding:2rem; height:100%; border-left:4px solid #0ea5e9;">
+                        <div style="display:flex; align-items:center; margin-bottom:1rem;">
+                            <div style="background:linear-gradient(135deg,#0ea5e9 0%,#0284c7 100%);
+                          border-radius:12px; width:50px; height:50px; display:flex;
+                          align-items:center; justify-content:center; margin-right:1rem;">
+                                <!-- Check Double SVG -->
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M11 11l4 4m0 0l4-4m-4 4V3m-9 9l4 4m0 0l4-4m-4 4V3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7 12l5 5 10-10" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 style="color:#111827; font-weight:700; margin:0; font-size:1.1rem;">
+                                Vendor Bill Two-Step Validation
+                            </h4>
+                        </div>
+                        <p style="color:#4b5563; margin:0; line-height:1.6; font-size:0.95rem;">
+                            Specialized chain for vendor bills: <strong>Payment Validator 1</strong> reviews and forwards, <strong>Payment Validator 2</strong> performs final authorization independent of amount thresholds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Role-Based Security -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="shadow-sm"
+                         style="background:#fff; border-radius:15px; padding:2rem; height:100%; border-left:4px solid #8b5cf6;">
+                        <div style="display:flex; align-items:center; margin-bottom:1rem;">
+                            <div style="background:linear-gradient(135deg,#8b5cf6 0%,#7c3aed 100%);
+                          border-radius:12px; width:50px; height:50px; display:flex;
+                          align-items:center; justify-content:center; margin-right:1rem;">
+                                <!-- Shield/User SVG -->
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+                                    <path d="M12 14a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" fill="#fff"/>
+                                </svg>
+                            </div>
+                            <h4 style="color:#111827; font-weight:700; margin:0; font-size:1.1rem;">
+                                Role-Based Access Control
+                            </h4>
+                        </div>
+                        <p style="color:#4b5563; margin:0; line-height:1.6; font-size:0.95rem;">
+                            Five distinct security groups ensure strict authorization: <strong>Support Approver</strong>, <strong>Accounting Approver</strong>, <strong>General Approver</strong>, and <strong>Payment Validators 1 & 2</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Smart Request Approval -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="shadow-sm"
+                         style="background:#fff; border-radius:15px; padding:2rem; height:100%; border-left:4px solid #f59e0b;">
+                        <div style="display:flex; align-items:center; margin-bottom:1rem;">
+                            <div style="background:linear-gradient(135deg,#f59e0b 0%,#d97706 100%);
+                          border-radius:12px; width:50px; height:50px; display:flex;
+                          align-items:center; justify-content:center; margin-right:1rem;">
+                                <!-- Send SVG -->
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 style="color:#111827; font-weight:700; margin:0; font-size:1.1rem;">
+                                Smart Request Workflow
+                            </h4>
+                        </div>
+                        <p style="color:#4b5563; margin:0; line-height:1.6; font-size:0.95rem;">
+                            Single <strong>Request Approval</strong> button automatically determines the correct approval path based on document type and amount, replacing the standard Post button when enabled.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Reject & Reset -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                    <div class="shadow-sm"
+                         style="background:#fff; border-radius:15px; padding:2rem; height:100%; border-left:4px solid #ef4444;">
+                        <div style="display:flex; align-items:center; margin-bottom:1rem;">
+                            <div style="background:linear-gradient(135deg,#ef4444 0%,#dc2626 100%);
+                          border-radius:12px; width:50px; height:50px; display:flex;
+                          align-items:center; justify-content:center; margin-right:1rem;">
+                                <!-- X/Reset SVG -->
+                                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M18 6 6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h4 style="color:#111827; font-weight:700; margin:0; font-size:1.1rem;">
+                                Instant Rejection & Reset
+                            </h4>
+                        </div>
+                        <p style="color:#4b5563; margin:0; line-height:1.6; font-size:0.95rem;">
+                            <strong>Reject</strong> button immediately returns documents to draft state for corrections. No need to create new records—simply edit and resubmit for approval.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="oe_container" style="margin: 4rem 0;">
+    <div class="oe_row oe_spaced">
+
+        <h2 class="text-center"
+            style="color:#111827; font-weight:700; font-size:2.4rem; margin-bottom:2.5rem;">
+            Detailed Usage Guide
+        </h2>
+    </div>
+</section>
+
+
+<!-- Step-by-step Guide -->
+<section class="oe_container" style="margin: 4rem 0;">
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
+        <div style="background: white; border-left: 5px solid #f59e0b; padding: 1.5rem 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h4 style="color: #1e293b; font-weight: 700; margin-bottom: 1rem;">
+                Configuration & Threshold Setup
+            </h4>
+            <p style="color: #64748b; line-height: 1.7; margin: 0;">
+                Enable the approval workflow from Accounting Settings and define the <strong>Threshold Amount</strong>. When activated, the standard <strong>Post</strong> button is hidden and replaced by <strong>Request Approval</strong>, enforcing mandatory validation chains before any invoice or refund can be posted.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Screenshot 1 -->
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im1.png" alt="Configuration Settings"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+
+<section class="oe_container" style="margin: 4rem 0;">
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
+        <div style="background: white; border-left: 5px solid #10b981; padding: 1.5rem 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h4 style="color: #1e293b; font-weight: 700; margin-bottom: 1rem;">
+                Role-Based Access Control
+            </h4>
+            <p style="color: #64748b; line-height: 1.7; margin: 0;">
+                Assign users to specific approval groups: <strong>Support Approver</strong>, <strong>Accounting Approver</strong>, <strong>General Approver</strong>, <strong>Payment Validator 1</strong>, and <strong>Payment Validator 2</strong>. Each group carries distinct authorization limits enforced at the code level.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Screenshot 2 -->
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im2.png" alt="Create Internal Transfer with Request Approval Button"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+
+<section class="oe_container" style="margin: 4rem 0;">
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
+        <div style="background: white; border-left: 5px solid #0ea5e9; padding: 1.5rem 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h4 style="color: #1e293b; font-weight: 700; margin-bottom: 1rem;">
+                Workflow Initiation
+            </h4>
+            <p style="color: #64748b; line-height: 1.7; margin: 0;">
+                In draft state, users must click <strong>Request Approval</strong> to submit documents for validation. The system evaluates document type and amount to determine routing: vendor bills go to Payment Validators, while customer invoices and refunds route based on the threshold setting.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Screenshot 3 -->
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im3.png" alt="Approver View with Approve and Reject Buttons"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+
+<section class="oe_container" style="margin: 4rem 0;">
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
+        <div style="background: white; border-left: 5px solid #8b5cf6; padding: 1.5rem 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h4 style="color: #1e293b; font-weight: 700; margin-bottom: 1rem;">
+                Intelligent Amount-Based Routing
+            </h4>
+            <p style="color: #64748b; line-height: 1.7; margin: 0;">
+                Documents automatically route to appropriate approvers based on value. Amounts below threshold await <strong>Support</strong> or <strong>Accounting</strong> approval, while high-value documents require <strong>General Manager</strong> authorization. <strong>Approve</strong> and <strong>Reject</strong> buttons appear only for authorized users.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Screenshot 4 -->
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im4.png" alt="Validation Error Without Approval"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im5.png" alt="Validation Error Without Approval"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+
+<section class="oe_container" style="margin: 4rem 0;">
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
+        <div style="background: white; border-left: 5px solid #f59e0b; padding: 1.5rem 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h4 style="color: #1e293b; font-weight: 700; margin-bottom: 1rem;">
+                Vendor Bill Two-Step Validation
+            </h4>
+            <p style="color: #64748b; line-height: 1.7; margin: 0;">
+                Vendor bills follow a dedicated chain through <strong>Payment Validator 1</strong> then <strong>Payment Validator 2</strong>. Validator 1 forwards the bill, Validator 2 performs final authorization. Upon final approval, the system automatically posts the bill and creates journal entries.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im5_1.png" alt="Validation Error Without Approval"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im6.png" alt="Validation Error Without Approval"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+
+<section class="oe_container" style="margin: 4rem 0;">
+    <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
+        <div style="background: white; border-left: 5px solid #f59e0b; padding: 1.5rem 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <h4 style="color: #1e293b; font-weight: 700; margin-bottom: 1rem;">
+                Strict Authorization Enforcement
+            </h4>
+            <p style="color: #64748b; line-height: 1.7; margin: 0;">
+                Unauthorized users attempting to approve receive immediate <strong>ValidationError</strong> messages. Authorized approvers see contextual <strong>Approve</strong> and <strong>Reject</strong> buttons. Clicking <strong>Reject</strong> instantly returns the document to draft state for corrections.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im7.png" alt="Validation Error Without Approval"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im8.png" alt="Validation Error Without Approval"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+<section style="margin-bottom: 3rem;">
+    <div class="text-center">
+        <img src="im9.png" alt="Validation Error Without Approval"
+             style="max-width: 90%; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row" style="padding: 3rem 0;">
+        <div class="oe_span12" style="background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%) !important; border-radius: 20px; padding: 3rem 2rem;">
+            <h3 class="oe_slogan" style="color: #1e293b !important; font-weight: 700; font-size: 2rem; margin-bottom: 1.5rem; text-align: center;">
+                <i class="fa fa-headphones" style="color: #6366f1; margin-right: 0.5rem;"></i>Need Support?
+            </h3>
+            <p class="oe_mt32" style="color: #64748b !important; font-size: 1.1rem; line-height: 1.8; max-width: 700px; margin: 0 auto 2rem auto !important; text-align: center;">
+                Our dedicated support team is here to help you with installation, configuration, and any questions you may have about the <strong>Invoice Approvals Management</strong>.
+            </p>
+            <div class="oe_span12" style="text-align: center; margin-top: 2rem;">
+                <table style="margin: 0 auto; width: auto;">
+                    <tr>
+                        <td style="text-align: center; vertical-align: top; padding: 1rem;">
+                            <a href="mailto:hello@code-experts.co">
+                                <i class="fa fa-envelope" style="font-size: 2.5rem; color: #6366f1; display: block; margin-bottom: 0.5rem;"></i>
+                                <span style="color: #1e293b; font-weight: 600; display: block; font-size: 0.9rem;">hello@code-experts.co</span>
+                            </a>
+                        </td>
+                        <td style="text-align: center; vertical-align: top; padding: 1rem;">
+                            <div>
+                                <i class="fa fa-phone" style="font-size: 2.5rem; color: #10b981; display: block; margin-bottom: 0.5rem;"></i>
+                                <span style="color: #1e293b; font-weight: 600; display: block; font-size: 0.9rem;">+973 1722 4488</span>
+                            </div>
+                        </td>
+                        <td style="text-align: center; vertical-align: top; padding: 1rem;">
+                            <div>
+                                <i class="fa fa-whatsapp" style="font-size: 2.5rem; color: #25d366; display: block; margin-bottom: 0.5rem;"></i>
+                                <span style="color: #1e293b; font-weight: 600; display: block; font-size: 0.9rem;">WhatsApp: +973 1722 4488</span>
+                            </div>
+                        </td>
+                        <td style="text-align: center; vertical-align: top; padding: 1rem;">
+                            <div>
+                                <i class="fa fa-globe" style="font-size: 2.5rem; color: #f59e0b; display: block; margin-bottom: 0.5rem;"></i>
+                                <span style="color: #1e293b; font-weight: 600; display: block; font-size: 0.9rem;">www.code-experts.co</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container" style="margin: 4rem 0 2rem 0;">
+    <div class="row">
+        <div class="col-12 text-center">
+            <p style="color: #94a3b8; font-size: 0.9rem; margin: 0;">
+                © 2026 Code Experts IT Solutions. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</section>

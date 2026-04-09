@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="stock_scrap_form_view2_inherit_approval" model="ir.ui.view">
+            <field name="name">stock.scrap.form2.inherit.approval</field>
+            <field name="model">stock.scrap</field>
+            <field name="inherit_id" ref="stock.stock_scrap_form_view2"/>
+            <field name="arch" type="xml">
+                <xpath expr="//footer//button[@name='action_validate']" position="after">
+                    <button name="action_to_manager_approval" string="To Manager Approval" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_to_approved" string="Approve" type="object" class="btn-primary" invisible="state != 'manager_approval'"/>
+                    <button name="action_to_rejected" string="Reject" type="object" class="btn-primary" invisible="state != 'manager_approval'"/>
+                    <button name="action_reset_to_draft" string="Reject" type="object" class="btn-primary" invisible="state not in ['approved', 'rejected']"/>
+                </xpath>
+                <xpath expr="//footer//button[@name='action_validate']" position="attributes">
+                    <attribute name="invisible">state != 'approved'</attribute>
+                    <attribute name="groups">codex_scrap_approvals.group_scrap_manager_approval</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="stock_scrap_form_view_inherit_approval" model="ir.ui.view">
+            <field name="name">stock.scrap.form.inherit.approval</field>
+            <field name="model">stock.scrap</field>
+            <field name="inherit_id" ref="stock.stock_scrap_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='action_validate']" position="after">
+                    <button name="action_to_manager_approval" string="To Manager Approval" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_to_approved" string="Approve" type="object" class="btn-primary" invisible="state != 'manager_approval'"/>
+                    <button name="action_to_rejected" string="Reject" type="object" class="btn-primary" invisible="state != 'manager_approval'"/>
+                    <button name="action_reset_to_draft" string="Reset" type="object" class="btn-primary" invisible="state not in ['approved', 'rejected']"/>
+                </xpath>
+                <xpath expr="//button[@name='action_validate']" position="attributes">
+                    <attribute name="invisible">state != 'approved'</attribute>
+                    <attribute name="groups">codex_scrap_approvals.group_scrap_manager_approval</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

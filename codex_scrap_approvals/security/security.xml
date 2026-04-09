@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="group_scrap_manager_approval" model="res.groups">
+            <field name="name">Scrap Manager Approver</field>
+            <field name="comment">The user will have access to validate Scrap.</field>
+            <field name="category_id" ref="base.module_category_hidden"/>
+        </record>
+    </data>
+</odoo>
