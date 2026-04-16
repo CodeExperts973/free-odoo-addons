@@ -33,7 +33,7 @@ Technical
 * No database schema changes or additional fields created
     """,
     'author': 'Code Experts IT Solutions',
-    'website': 'http://www.codeexperts.com',
+    'website': 'https://www.code-experts.co',
     'depends': ['base', 'contacts'],
     'data': [],
     'images': [

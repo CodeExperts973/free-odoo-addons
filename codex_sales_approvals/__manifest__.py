@@ -41,7 +41,7 @@ Security
 * Workflow enforced at API level preventing backend bypass
     """,
     'author': 'Code Experts IT Solutions',
-    'website': 'http://www.codeexperts.com',
+    'website': 'https://www.code-experts.co',
     'depends': ['base', 'sale', 'sales_team'],
     'data': [
         'security/security.xml',
